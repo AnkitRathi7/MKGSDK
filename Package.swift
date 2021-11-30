@@ -18,11 +18,6 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "MKGSDK",
-            dependencies: []),
-        .testTarget(
-            name: "MKGSDKTests",
-            dependencies: ["MKGSDK"]),
+        .binaryTarget(name: "MKGSDK", url: "https://github.com/Mintegral-official/MintegralAdSDK-iOS-new/releases/download/7.0.3.0/Mintegral_M_SDK.zip", checksum: "577ab6a2392696e9b7fc7a08de1d323009092adc29617d506cc9a997e8daf153"),
     ]
 )
